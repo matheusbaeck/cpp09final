@@ -7,22 +7,9 @@
 # include <fstream>
 # include <sstream>
 # include <iterator>
+#include <ctime>
+#include <string>
 
-class BitcoinExchange
-{
-
-	private:
-		std::map<std::string, double> _data;
-		double getBitcoinRate(const std::string & date) const;
-
-	public:
-		BitcoinExchange();
-		BitcoinExchange(const BitcoinExchange & obj);
-		~BitcoinExchange();
-		BitcoinExchange& operator=(const BitcoinExchange & obj);
-		void	readDataBaseFromFile(const std::string & file_name);
-		void	printValueExchanged(const std::string & input_file) const;
-};
 
 
 #endif
